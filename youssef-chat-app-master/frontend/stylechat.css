@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.maincont{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+}
+.leftcont{
+    width: 25vw;
+    min-height: 100vh;
+    background-color: #333744;
+    padding: .5rem;
+    overflow-y: scroll;
+}
+.nan{
+    display: none;
+}
+.useronline{
+    /* width: 23; */
+    height: 15vh;
+    background-color: #323949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-family: cursive;
+}
+.rightcont{
+    width: 75vw;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+.addr{
+    text-align: center;
+    width: 25vw;
+}
+.lefttt{
+    width: 25vw;
+
+}
+.righteee{
+    width: 25vw;
+
+}
+
+.tit{
+    height: 15vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #238cee;
+    font-size: 2rem;
+}
+.msgsshow{
+    height: 65vh;
+    background-color: white;
+    overflow-y: scroll;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.sendcont{
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#inpmsg{
+    background-color: #ebebeb;
+    font-size: 1.8rem;
+    padding: .7rem;
+    width: 40vw;
+    border: 1px solid #ebebeb;
+    border-radius: 1rem;
+}
+#btnsend{
+    background-color: #238cee;
+    font-size: 1.8rem;
+    padding: .7rem 1.3rem;
+    
+    border: 1px solid #238cee;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.shaml{
+    height: 13vh;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.meshaml{
+    height: 13vh;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.minishaml{
+    min-width: 10vw;
+    height: 10vh;
+    background-color: #f5f5f5;
+    border-radius: 1.5rem;
+    padding: .5rem;
+}
+.namedate{
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.nameus{
+    margin-right: .5rem;
+}
+.menameus{
+    margin-right: .5rem;
+}
+.datest{
+    color: #9d9d93;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nameus{
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.meminishaml{
+    min-width: 10vw;
+    height: 10vh;
+    background-color: #0099ff;
+    border-radius: 1.5rem;
+    padding: .5rem;
+}
+.metxt{
+    color: #aaebff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.memessagevalue{
+    color: white;
+}
+.userjoin{
+   display: none;
+   position: absolute;
+    height: 7rem;
+    min-width: 17rem;
+    background-color: rgba(127, 229, 255, 0.411);
+    left: 44%;
+    top: 7%;
+    padding: .5rem;
+    
+    
+}
+#jointxt{
+    height: 7rem;
+    min-width: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+#userjoin{
+    display: inline;
+}
+.shroot{
+    display: none;
+}
+.ref{
+    cursor: pointer;
+    height: 15vh;
+    background-color: #323949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-family: cursive;
+}
+.off{
+   display: none; 
+   
+}
+.on{
+   
+}
+.onn{
+    display: inline;
+    cursor: pointer;
+    height: 15vh;
+    background-color: #323949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-family: cursive;
+    
+}
+.offf{
+    display: none;
+}
+@media screen and (max-width: 821px) {.userjoin{left: 20%;}}
+@media screen and (max-width: 954px) {
+
+    .userjoin{
+        display: none;
+        position: absolute;
+         height: 7rem;
+         min-width: 17rem;
+         background-color: rgba(127, 229, 255, 0.411);
+         left: 40%;
+         top: 7%;
+         padding: .5rem;
+         
+         
+     }
+    .ref{
+        display: none;
+    }
+    .leftcont{width: 0vw;
+        padding: 0rem;
+        transition: 0.5s;
+    }
+
+    .rightcont{width: 100vw;}
+    
+    .shroot{
+        display: flex;
+        height: 10vh;
+        width: 15vw;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    .shrtone{
+        height: .3rem;
+        width: 10vw;
+        background-color: black;
+    }
+    .shrttwo{
+        height: .3rem;
+        background-color: black;
+        width: 10vw;
+    }
+    .shrtthree{
+        height: .3rem;
+        background-color: black;
+        width: 10vw;
+    }
+
+    .morewidth{
+        width: 100vw;
+        padding: .5rem;
+    }
+    .lesswidth{
+        display: none;
+    }
+    .ex{
+        position: absolute;
+        font-size: 3rem;
+        font-family: cursive;
+        left: 2rem;
+        top: 2rem;
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+    .fgaa{
+        display: inline;
+    }
+    
+}
+
+@media screen and (max-width: 821px) {.userjoin{left: 30%;}}
+@media screen and (max-width: 635px) {.userjoin{left: 25%;}}
+@media screen and (max-width: 483px) {.userjoin{left: 19%;}}
+
+@media screen and (max-width: 414px) {
+    #inpmsg{
+        background-color: #ebebeb;
+        font-size: 1.4rem;
+        padding: .7rem;
+        width: 70vw;
+        border: 1px solid #ebebeb;
+        border-radius: 1rem;
+    }
+    #btnsend{
+        background-color: #238cee;
+        font-size: 1.4rem;
+        padding: .7rem 1.3rem;
+        
+        border: 1px solid #238cee;
+        border-radius: 1rem;
+        color: white;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 330px) {
+    #inpmsg{
+        background-color: #ebebeb;
+        font-size: 1.2rem;
+        padding: .7rem;
+        width: 60vw;
+        border: 1px solid #ebebeb;
+        border-radius: 1rem;
+    }
+    #btnsend{
+        background-color: #238cee;
+        font-size: 1.2rem;
+        padding: .7rem 1.3rem;
+        
+        border: 1px solid #238cee;
+        border-radius: 1rem;
+        color: white;
+        cursor: pointer;
+    }
+    .righteee{
+        display: none;
+    }
+    .addr{
+        text-align: center;
+        width: 58vw;
+    }
+    .lefttt{
+        width: 20vw;
+    
+    }
+}
+@media screen and (max-width: 397px) {.userjoin{left: 15%;}}

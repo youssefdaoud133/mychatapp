@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app</title>
+    <link rel="stylesheet" href="./stylechat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body id="mybody">
+
+    <div class="maincont">
+        <div class="leftcont">
+            <div class="ex nan">X</div>
+            <div class="on ref">Show</div>
+            <div class="off ref">Refrish</div>
+
+        </div>
+        <div class="rightcont">
+            <div class="tit">
+                <div class="lefttt">
+                    <div class="shroot">
+                        <div class="shrtone"></div>
+                        <div class="shrttwo"></div>
+                        <div class="shrtthree"></div>
+                    </div>
+                </div>
+                <div class="addr">
+                    Chattrino
+                    <br><i class="far fa-comments"></i>
+                </div>
+                <div class="righteee"></div>
+
+            </div>
+            <div class="msgsshow">
+
+            </div>
+            <div class="sendcont">
+                <form id="message">
+
+                    <input id="inpmsg" placeholder="Message" type="text" />
+                    <button id="btnsend" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./appchat.js"></script>
+</body>
+
+</html>
